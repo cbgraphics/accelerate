@@ -1,0 +1,54 @@
+/*
+Theme Name:   Accelerate Theme Child
+Theme URI:    http://example.com/accelerate-theme-child/
+Description:  Accelerate Child Theme - Accelerate
+Author:       Cynthia Bartz
+Author URI:   http://cbgraphics.net
+Template:     accelerate-theme
+Version:      1.0.0
+Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+Text Domain:  accelerate-theme-child
+*/
+
+@import url("../accelerate-theme/style.css");
+
+/*----------Homepage----------*/
+
+#masthead {
+    background: none repeat scroll 0 0 #42ad9d;
+    color: white;
+    height: 30px;
+    padding: 10px 0;
+}
+
+#masthead a {
+	color:white;
+	text-transform: uppercase;
+}
+
+#masthead nav ul {
+	margin: 0;
+}
+
+#masthead nav ul li{
+	display: inline-block;
+	float: right;
+	padding-left: 40px;
+}
+
+.home-page {
+    background: url("img/taxi-photo.jpg") no-repeat scroll left center / cover rgba(0, 0, 0, 0);
+    height: 440px;
+    margin: 0 0 80px;
+    padding: 100px 0;
+}
+
+.button {
+    background: none repeat scroll 0 0 #42ad9d;
+    color: white;
+    font-family: "montserrat";
+    font-size: 20px;
+    font-weight: bold;
+    padding: 20px 50px;
+    text-align: center;
+}
