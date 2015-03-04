@@ -12,6 +12,18 @@ Text Domain:  accelerate-theme-child
 
 @import url("../accelerate-theme/style.css");
 
+/*----------UniversalStyles----------*/
+
+h4 {
+    color: #a5a5a5;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.2;
+    padding-bottom: 26px;
+    text-transform: uppercase;
+}
+
+
 /*----------Homepage----------*/
 
 #masthead {
@@ -30,7 +42,7 @@ Text Domain:  accelerate-theme-child
 	margin: 0;
 }
 
-#masthead nav ul li{
+#masthead nav ul li {
 	display: inline-block;
 	float: right;
 	padding-left: 40px;
@@ -51,4 +63,26 @@ Text Domain:  accelerate-theme-child
     font-weight: bold;
     padding: 20px 50px;
     text-align: center;
+}
+
+.blog-post .read-more-link {
+    font-size: 12px;
+    font-weight: bold;
+    padding-top: 26px;
+    text-transform: uppercase;
+}
+
+.blog-post .read-more-link a, a:link, a:hover {
+    color: #42ad9d;
+}
+
+.blog-post {
+    width: 50%;
+}
+
+/*-----------BlogStyles----------*/
+
+
+.blog-post .entry-title a, a:link {
+    color: #3b3b3b;
 }
