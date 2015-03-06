@@ -27,6 +27,39 @@ get_header(); ?>
 </section><!-- .home-page -->
 
 
+<!--Featured Works-->
+<section class="featured-works">
+	<div class ="site-content">
+		<h4>Featured Work</h4>
+
+		<?php query_posts('posts_per_page=3&post_type=case_studies'); ?>
+				<?php while ( have_posts() ) : the_post(); ?>
+				<article class="featured-works-article">
+				
+					<?php 
+
+					$image_1 = get_field('image_1');
+					$size = "full";
+
+					?>
+
+					<a href="<?php the_permalink(); ?>">
+					<?php
+					if($image_1) {
+					echo wp_get_attachment_image( $image_1, $size );
+					} 
+					else {
+						echo wp_get_attachment_image( 47342, $size );
+					}?>
+					</a>
+
+					<a href="<?php the_permalink(); ?>"><h5><?php the_title(); ?></h5></a>
+
+				</article>
+			<?php endwhile; ?>
+	</div>
+</section>
+
 <!--Recent Blog Posts-->
 <section class="recent-posts">
 	<div class="site-content">
